@@ -58,3 +58,6 @@ typings/
 .env
 
 .nuxt
+
+# IDE / Editer
+.idea
