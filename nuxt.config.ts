@@ -1,6 +1,7 @@
 import webpack from 'webpack'
+import { NuxtConfig } from "@nuxt/types";
 
-export default {
+const config: NuxtConfig = {
   head: {
     titleTemplate: '%s - qtum.info',
     meta: [
@@ -23,12 +24,12 @@ export default {
   },
   build: {
     extend(config, {isServer}) {
-      config.module.rules.push({
+      config.module?.rules.push({
         test: /\.ya?ml$/,
         type: 'json',
         use: 'yaml-loader'
       })
-      config.plugins.push(new webpack.DefinePlugin({
+      config.plugins?.push(new webpack.DefinePlugin({
         'process.env.qtuminfoAPIBase': JSON.stringify(process.env.QTUMINFO_API_BASE
           || process.env[isServer ? 'QTUMINFO_API_BASE_SERVER' : 'QTUMINFO_API_BASE_CLIENT']
           || 'http://localhost:7001/'),
@@ -40,8 +41,10 @@ export default {
     },
     extractCSS: true,
     postcss: {
-      features: {
-        customProperties: false
+      preset: {
+        features: {
+          customProperties: false
+        }
       }
     }
   },
@@ -53,3 +56,5 @@ export default {
     {src: '~/plugins/websocket.js', ssr: false}
   ]
 }
+
+export default config
