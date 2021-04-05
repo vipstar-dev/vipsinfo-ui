@@ -1,0 +1,168 @@
+blockchain:
+  blockchain: ブロックチェーン
+  address: アドレス
+  block: ブロック
+  transaction: トランザクション
+  contract: コントラクト
+  token: トークン
+  misc: その他
+  blockchain_height: ブロックチェーンの高さ
+  current_difficulty: 現在の難易度
+  network_weight: ネットワークウェイト
+  fee_rate: 手数料レート
+block:
+  brief:
+    address: "採掘者: {0}"
+    transaction: '{1} 秒内に {0} トランザクション'
+    reward: ブロック報酬
+  list:
+    block_list: ブロック
+    height: ブロック高
+    time: ブロックタイム
+    reward: 報酬
+    mined_by: 採掘者
+    size: ブロックサイズ
+    transactions: 取引
+  summary: ブロックの概要
+  block_height: ブロック高
+  block_hash: ブロックのハッシュ値
+  block_size: ブロックサイズ
+  block_weight: ブロックウェイト
+  bytes: バイト
+  timestamp: タイムスタンプ
+  block_reward: ブロック報酬
+  difficulty: 難易度
+  merkle_root: マークルルート
+  mined_by: 採掘者
+  transactions: トランザクション
+  previous_block: 前のブロック
+  next_block: 次のブロック
+transaction:
+  summary: トランザクションの概要
+  confirmations: 承認
+  unconfirmed: 未承認
+  transaction_id: トランクザションID
+  transaction_hash: トランザクションハッシュ
+  included_in_block: 取り込まれたブロック
+  transaction_size: トランザクションサイズ
+  bytes: バイト
+  timestamp: タイムスタンプ
+  confirmation: 承認
+  transaction_fee: 取引手数料
+  coinbase_input: コインベース入力
+  empty_output: 空の出力
+  op_return_output: OP_RETURN 出力
+  unparsed_address: 未解析のアドレス
+  fee: 手数料
+  reward: 報酬
+  gas_refund: 払い戻しガス
+  script:
+    type: タイプ
+    script: スクリプト
+    witness: 証人
+    code: コード
+    contract_create: コントラクト作成
+    contract_call: コントラクト呼び出し
+  receipt:
+    sender: 送信者
+    contract_address: コントラクトアドレス
+    gas_used: 使用したガス
+    excepted: 対象外
+    event_logs: イベントログ
+    address: アドレス
+    topics: トピック
+    data: データ
+  mempool: メモリプール
+address:
+  invalid_address: 無効なアドレス
+  summary: アドレス
+  address: アドレス
+  balance: 残高
+  unconfirmed: 未承認
+  staking: ステーキング
+  total_received: 総入金額
+  total_sent: 総送金額
+  token_balances: トークン残高
+  blocks_mined: 採掘したブロック
+  transaction_count: トランザクション数
+  transaction_list: トランザクションリスト
+  balance_changes: 残高変化
+  token_balance_changes: トークン残高変化
+  timestamp: タイムスタンプ
+  transaction_id: トランザクションID
+  changes: 変化
+my_addresses:
+  star: お気に入り登録
+  unstar: お気に入り解除
+  summary: 概要
+contract:
+  summary: コントラクト
+  address: アドレスのハッシュ
+  owner: 所有者
+  create_transaction: 作成日時
+  token:
+    name: トークン名
+    total_supply: 発行枚数
+    tokens: トークン
+    mint_tokens: 発行トークン
+    burn_tokens: 焼却トークン
+    token_transactions: トランザクション
+    token_holders: トークン所有者
+  balance: 残高
+  total_received: 総入金額
+  total_sent: 総送金額
+  transaction_count: トランザクション数
+  transaction_list: トランザクションリスト
+misc:
+  misc: その他
+  charts_title: チャート
+  rich_list_title: 金持ちのリスト
+  biggest_miners_title: 最大の採掘者
+  ranking: ランキング
+  address: アドレス
+  balance: 残高
+  blocks_mined: 採掘したブロック
+  percentage: パーセンテージ
+  network_statistics: ネットワーク統計
+  stats:
+    daily_transactions: 日々の取引
+    total_transactions: トランザクション総数
+    contract_transactions: コントラクトトランザクション
+    block_interval: ブロック間隔
+    coinstake_distribution: コインステーク分布
+    address_growth: アドレス成長
+    blocks: ブロック
+    interval: '間隔 (秒)'
+    expected_value: 期待値
+    coins: コイン
+    blocks_mined: 採掘したブロック
+  stake_calculator:
+    title: "ステーク計算機 "
+    network_weight: ネットワークウェイト
+    enter_address: あなたのアドレスを入力してください (オプション)
+    weight: あなたのウェイト (coins to stake)
+    expected_time: 期待時間
+    seconds: 秒
+    minutes: 分
+    hours: 時
+    days: 日
+    months: 月
+    years: 年
+    average_blocks_per_day: 1日あたりの平均ブロック数
+    average_blocks_per_year: 年間平均ブロック
+    yearly_roi: 年ごとのROI
+nav:
+  search: ブロック・トランザクション・アドレス・コントラクト・トークンを検索
+pagination:
+  go_to: "このページに行く:"
+footer:
+  contact_us: 連絡先
+  facebook: Facebook
+  twitter: Twitter
+  forum: フォーラム
+action:
+  copy: コピー
+  view_all: すべて見る
+  go: 送信
+notification:
+  new_transaction_received: 新規トランザクションを受信しました
